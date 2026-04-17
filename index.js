@@ -1,9 +1,57 @@
-let nombre = ""
-let edad = 0
-let tipo_de_documento = "" 
-let numero_de_documento = 0
-let salario = 0
-let comisiones = 0
-let Total_de_horas_extras = 0
-let calificacion_de_nivel_de_riesgo = ""
+let nombre = "" ;
+let edad = 0 ;
+let tipo_de_documento = "" ;
+let numero_de_documento = 0 ;
+let salario = 0 ;
+let comisiones = 0 ;
+let Total_de_horas_extras = 0 ;
+let calificacion_de_nivel_de_riesgo = "" ;
+
+if (edad < 18) {
+    console.log("No puede entrar, es menor de edad") ;
+} else
+
+if (edad >= 18 && edad <= 25) {
+    console.log("Usuario beneficiaro por cotizante, no puede entrar") ;
+} else
+
+if (edad >= 60) {
+    console.log("pensionado") ;
+}
+
+if (edad >= 25 && edad < 60){
+    console.log(entra) ;    
+}
+
+
+
+
+
+{
+  const SMLV = 1750905 ;
+  const SMIV = 22761765 ;
+  const ST = 249095 ;
+  const UDVT = 52.37 ;
+
+  const Riesgo_1 = 0.522 ;
+  const Riesgo_2 = 1.044 ;
+  const Riesgo_3 = 2.436 ;
+  const Riesgo_4 = 4.350 ;
+  const Riesgo_5 = 6.960 ;
+
+  const porcentajeIBC = 0.7 ;
+  const porsentajeSalud = 0.04 ;
+  const porcentajePension = 0.04 ;
+
+  function 
+ 
+
+
+
+  let salario_Total = salario + comisiones + horas_extras;
+  let IBC = salario_Total * porcentajeIBC ;
+  let salud = IBC * porsentajeSalud ;
+  let pension = IBC * porcentajePension ;
+} 
+
 
