@@ -7,6 +7,28 @@
 </head>
 <body>
 <script src="script.js"></script>
+<form method="get">
+
+    <label for="nombre"> name: </label>
+    <input type="text" name="name" id="name" required/>
+
+    <label for="edad" name="edad"> edad: </label>
+    <input type="number" name="edad" id="edad" required/>
+    
+    <label for="tipo_de_documento" name="tipo_de_documento"> tipo de documento: </label>
+    <select name="tipo_de_documento" id="tipo_de_documento" required>
+        <option value="TI">T.I</option>
+        <option value="CC">C.C</option>
+        <option value="CE">C.E</option>
+        <option value="RC">R.C</option>
+    </select>
+
+    <label for="numero_de_documento" name="numero_de_documento"> número de documento: </label>
+    <input type="number" name="numero_de_documento" id="numero_de_documento" required/>
+    
+
+
+</form>
 </body>
 </html>
 

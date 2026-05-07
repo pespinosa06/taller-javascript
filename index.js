@@ -38,12 +38,15 @@ if (edad >= 25 && edad < 60){
   const Riesgo_3 = 2.436 ;
   const Riesgo_4 = 4.350 ;
   const Riesgo_5 = 6.960 ;
+  const riesgo = [Riesgo_1, Riesgo_2, Riesgo_3, Riesgo_4, Riesgo_5] ;
 
   const porcentajeIBC = 0.7 ;
-  const porsentajeSalud = 0.04 ;
+  const porcentajeSalud = 0.04 ;
   const porcentajePension = 0.04 ;
 
-  function 
+  function Calcularporcentaje (base, porcentaje) {
+    return base * porcentaje ;
+  }
  
 
 
@@ -53,5 +56,6 @@ if (edad >= 25 && edad < 60){
   let salud = IBC * porsentajeSalud ;
   let pension = IBC * porcentajePension ;
 } 
+
 
 
