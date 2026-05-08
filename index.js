@@ -1,11 +1,7 @@
-let nombre = "" ;
-let edad = 0 ;
-let tipo_de_documento = "" ;
+let nombre = document.getElementById("nombre") ;
+let edad = document.getElementById("edad") ;
+let tipo_de_documento = document.getElementById("tipo_de_documento") ;
 let numero_de_documento = 0 ;
-let salario = 0 ;
-let comisiones = 0 ;
-let Total_de_horas_extras = 0 ;
-let calificacion_de_nivel_de_riesgo = "" ;
 
 if (edad < 18) {
     console.log("No puede entrar, es menor de edad") ;
@@ -24,10 +20,12 @@ if (edad >= 25 && edad < 60){
 }
 
 
+let salario = 0 ;
+let comisiones = 0 ;
+let Total_de_horas_extras = 0 ;
+let calificacion_de_nivel_de_riesgo = "" ;
 
 
-
-{
   const SMLV = 1750905 ;
   const SMIV = 22761765 ;
   const ST = 249095 ;
@@ -55,7 +53,8 @@ if (edad >= 25 && edad < 60){
   let IBC = salario_Total * porcentajeIBC ;
   let salud = IBC * porsentajeSalud ;
   let pension = IBC * porcentajePension ;
-} 
+
+
 
 
 
