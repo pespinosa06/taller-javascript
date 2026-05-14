@@ -54,7 +54,22 @@ let calificacion_de_nivel_de_riesgo = "" ;
   let salud = IBC * porsentajeSalud ;
   let pension = IBC * porcentajePension ;
 
-
-
-
-
+  // aqui se agrega la validacion de datos y el if para mostrar el error y hacer el return de la pagina :3
+  function validacionDatos () 
+  nombre = document.getElementById("nombre").value ;
+  edad = document.getElementById("edad") .value ;
+  tipo_de_documento = document.getElementById("tipo_de_documento").value ;
+  numero_de_documento = document.getElementById("numero_de_documento").value ;
+  if(!nombre)
+    mostrarError("El campo nombre es obligatorio") ;
+return;
+  if(!edad)
+    mostrarError("El campo edad es obligatorio") ;
+return;
+    if(!tipo_de_documento)  
+    mostrarError("El campo tipo de documento es obligatorio") ;
+return;
+    if(!numero_de_documento)
+    mostrarError("El campo numero de documento es obligatorio") ;
+return;
+  
